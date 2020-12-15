@@ -1,0 +1,11 @@
+{{^comment.empty}}
+    /**
+{{#comment}}
+     * {{{.}}}
+{{/comment}}
+     */
+{{/comment.empty}}
+{{#annotations}}
+    {{{declaration}}}
+{{/annotations}}
+    {{{returnTypeName}}} {{name}}({{parameterDeclarations}});
