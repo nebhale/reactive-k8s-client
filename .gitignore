@@ -1,7 +1,3 @@
-openapi.json
-src/client/java/
-src/model/java/
-
 HELP.md
 .gradle
 build/
