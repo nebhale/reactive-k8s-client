@@ -63,6 +63,6 @@ public interface PriorityClassClient {
     /**
      * replace the specified PriorityClass
      */
-    Mono<PriorityClass> update(String name, PriorityClass body, UpdateOptions options);
+    Mono<PriorityClass> update(PriorityClass body, UpdateOptions options);
 
 }

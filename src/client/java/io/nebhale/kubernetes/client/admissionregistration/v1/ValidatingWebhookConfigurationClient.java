@@ -63,6 +63,6 @@ public interface ValidatingWebhookConfigurationClient {
     /**
      * replace the specified ValidatingWebhookConfiguration
      */
-    Mono<ValidatingWebhookConfiguration> update(String name, ValidatingWebhookConfiguration body, UpdateOptions options);
+    Mono<ValidatingWebhookConfiguration> update(ValidatingWebhookConfiguration body, UpdateOptions options);
 
 }

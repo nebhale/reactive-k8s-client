@@ -73,11 +73,11 @@ public interface JobClient {
     /**
      * replace the specified Job
      */
-    Mono<Job> update(String name, Job body, UpdateOptions options);
+    Mono<Job> update(Job body, UpdateOptions options);
 
     /**
      * replace status of the specified Job
      */
-    Mono<Job> updateStatus(String name, Job body, UpdateOptions options);
+    Mono<Job> updateStatus(Job body, UpdateOptions options);
 
 }

@@ -68,11 +68,11 @@ public interface ServiceClient {
     /**
      * replace the specified Service
      */
-    Mono<Service> update(String name, Service body, UpdateOptions options);
+    Mono<Service> update(Service body, UpdateOptions options);
 
     /**
      * replace status of the specified Service
      */
-    Mono<Service> updateStatus(String name, Service body, UpdateOptions options);
+    Mono<Service> updateStatus(Service body, UpdateOptions options);
 
 }

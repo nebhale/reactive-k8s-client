@@ -63,6 +63,6 @@ public interface EndpointsClient {
     /**
      * replace the specified Endpoints
      */
-    Mono<Endpoints> update(String name, Endpoints body, UpdateOptions options);
+    Mono<Endpoints> update(Endpoints body, UpdateOptions options);
 
 }

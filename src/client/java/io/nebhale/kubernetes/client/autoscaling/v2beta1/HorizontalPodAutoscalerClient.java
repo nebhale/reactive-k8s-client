@@ -73,11 +73,11 @@ public interface HorizontalPodAutoscalerClient {
     /**
      * replace the specified HorizontalPodAutoscaler
      */
-    Mono<HorizontalPodAutoscaler> update(String name, HorizontalPodAutoscaler body, UpdateOptions options);
+    Mono<HorizontalPodAutoscaler> update(HorizontalPodAutoscaler body, UpdateOptions options);
 
     /**
      * replace status of the specified HorizontalPodAutoscaler
      */
-    Mono<HorizontalPodAutoscaler> updateStatus(String name, HorizontalPodAutoscaler body, UpdateOptions options);
+    Mono<HorizontalPodAutoscaler> updateStatus(HorizontalPodAutoscaler body, UpdateOptions options);
 
 }

@@ -73,11 +73,12 @@ public interface DeploymentClient {
     /**
      * replace the specified Deployment
      */
-    Mono<Deployment> update(String name, Deployment body, UpdateOptions options);
+    Mono<Deployment> update(Deployment body, UpdateOptions options);
+
 
     /**
      * replace status of the specified Deployment
      */
-    Mono<Deployment> updateStatus(String name, Deployment body, UpdateOptions options);
+    Mono<Deployment> updateStatus(Deployment body, UpdateOptions options);
 
 }

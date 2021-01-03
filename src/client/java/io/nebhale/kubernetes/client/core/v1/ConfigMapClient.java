@@ -63,6 +63,6 @@ public interface ConfigMapClient {
     /**
      * replace the specified ConfigMap
      */
-    Mono<ConfigMap> update(String name, ConfigMap body, UpdateOptions options);
+    Mono<ConfigMap> update(ConfigMap body, UpdateOptions options);
 
 }

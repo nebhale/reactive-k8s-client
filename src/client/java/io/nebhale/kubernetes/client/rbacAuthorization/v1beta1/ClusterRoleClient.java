@@ -63,6 +63,6 @@ public interface ClusterRoleClient {
     /**
      * replace the specified ClusterRole
      */
-    Mono<ClusterRole> update(String name, ClusterRole body, UpdateOptions options);
+    Mono<ClusterRole> update(ClusterRole body, UpdateOptions options);
 
 }

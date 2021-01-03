@@ -73,11 +73,11 @@ public interface PersistentVolumeClient {
     /**
      * replace the specified PersistentVolume
      */
-    Mono<PersistentVolume> update(String name, PersistentVolume body, UpdateOptions options);
+    Mono<PersistentVolume> update(PersistentVolume body, UpdateOptions options);
 
     /**
      * replace status of the specified PersistentVolume
      */
-    Mono<PersistentVolume> updateStatus(String name, PersistentVolume body, UpdateOptions options);
+    Mono<PersistentVolume> updateStatus(PersistentVolume body, UpdateOptions options);
 
 }

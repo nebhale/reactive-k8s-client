@@ -63,6 +63,6 @@ public interface ControllerRevisionClient {
     /**
      * replace the specified ControllerRevision
      */
-    Mono<ControllerRevision> update(String name, ControllerRevision body, UpdateOptions options);
+    Mono<ControllerRevision> update(ControllerRevision body, UpdateOptions options);
 
 }

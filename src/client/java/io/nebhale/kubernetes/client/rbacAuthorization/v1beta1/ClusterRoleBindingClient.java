@@ -63,6 +63,6 @@ public interface ClusterRoleBindingClient {
     /**
      * replace the specified ClusterRoleBinding
      */
-    Mono<ClusterRoleBinding> update(String name, ClusterRoleBinding body, UpdateOptions options);
+    Mono<ClusterRoleBinding> update(ClusterRoleBinding body, UpdateOptions options);
 
 }

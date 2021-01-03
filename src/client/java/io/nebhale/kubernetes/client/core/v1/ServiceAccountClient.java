@@ -63,6 +63,6 @@ public interface ServiceAccountClient {
     /**
      * replace the specified ServiceAccount
      */
-    Mono<ServiceAccount> update(String name, ServiceAccount body, UpdateOptions options);
+    Mono<ServiceAccount> update(ServiceAccount body, UpdateOptions options);
 
 }

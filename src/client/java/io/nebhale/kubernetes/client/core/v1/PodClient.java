@@ -78,11 +78,11 @@ public interface PodClient {
     /**
      * replace the specified Pod
      */
-    Mono<Pod> update(String name, Pod body, UpdateOptions options);
+    Mono<Pod> update(Pod body, UpdateOptions options);
 
     /**
      * replace status of the specified Pod
      */
-    Mono<Pod> updateStatus(String name, Pod body, UpdateOptions options);
+    Mono<Pod> updateStatus(Pod body, UpdateOptions options);
 
 }

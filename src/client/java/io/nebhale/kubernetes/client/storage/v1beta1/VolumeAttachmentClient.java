@@ -63,6 +63,6 @@ public interface VolumeAttachmentClient {
     /**
      * replace the specified VolumeAttachment
      */
-    Mono<VolumeAttachment> update(String name, VolumeAttachment body, UpdateOptions options);
+    Mono<VolumeAttachment> update(VolumeAttachment body, UpdateOptions options);
 
 }

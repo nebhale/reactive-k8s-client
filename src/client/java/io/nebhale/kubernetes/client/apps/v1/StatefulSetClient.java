@@ -73,11 +73,12 @@ public interface StatefulSetClient {
     /**
      * replace the specified StatefulSet
      */
-    Mono<StatefulSet> update(String name, StatefulSet body, UpdateOptions options);
+    Mono<StatefulSet> update(StatefulSet body, UpdateOptions options);
+
 
     /**
      * replace status of the specified StatefulSet
      */
-    Mono<StatefulSet> updateStatus(String name, StatefulSet body, UpdateOptions options);
+    Mono<StatefulSet> updateStatus(StatefulSet body, UpdateOptions options);
 
 }

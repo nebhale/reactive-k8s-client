@@ -73,11 +73,11 @@ public interface PodDisruptionBudgetClient {
     /**
      * replace the specified PodDisruptionBudget
      */
-    Mono<PodDisruptionBudget> update(String name, PodDisruptionBudget body, UpdateOptions options);
+    Mono<PodDisruptionBudget> update(PodDisruptionBudget body, UpdateOptions options);
 
     /**
      * replace status of the specified PodDisruptionBudget
      */
-    Mono<PodDisruptionBudget> updateStatus(String name, PodDisruptionBudget body, UpdateOptions options);
+    Mono<PodDisruptionBudget> updateStatus(PodDisruptionBudget body, UpdateOptions options);
 
 }

@@ -73,11 +73,12 @@ public interface ReplicaSetClient {
     /**
      * replace the specified ReplicaSet
      */
-    Mono<ReplicaSet> update(String name, ReplicaSet body, UpdateOptions options);
+    Mono<ReplicaSet> update(ReplicaSet body, UpdateOptions options);
+
 
     /**
      * replace status of the specified ReplicaSet
      */
-    Mono<ReplicaSet> updateStatus(String name, ReplicaSet body, UpdateOptions options);
+    Mono<ReplicaSet> updateStatus(ReplicaSet body, UpdateOptions options);
 
 }

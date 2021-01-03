@@ -63,6 +63,6 @@ public interface EventClient {
     /**
      * replace the specified Event
      */
-    Mono<Event> update(String name, Event body, UpdateOptions options);
+    Mono<Event> update(Event body, UpdateOptions options);
 
 }

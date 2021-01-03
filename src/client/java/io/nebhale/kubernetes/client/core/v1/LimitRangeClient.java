@@ -63,6 +63,6 @@ public interface LimitRangeClient {
     /**
      * replace the specified LimitRange
      */
-    Mono<LimitRange> update(String name, LimitRange body, UpdateOptions options);
+    Mono<LimitRange> update(LimitRange body, UpdateOptions options);
 
 }

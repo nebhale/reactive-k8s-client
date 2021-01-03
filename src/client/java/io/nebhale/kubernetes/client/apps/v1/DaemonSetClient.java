@@ -73,11 +73,11 @@ public interface DaemonSetClient {
     /**
      * replace the specified DaemonSet
      */
-    Mono<DaemonSet> update(String name, DaemonSet body, UpdateOptions options);
+    Mono<DaemonSet> update(DaemonSet body, UpdateOptions options);
 
     /**
      * replace status of the specified DaemonSet
      */
-    Mono<DaemonSet> updateStatus(String name, DaemonSet body, UpdateOptions options);
+    Mono<DaemonSet> updateStatus(DaemonSet body, UpdateOptions options);
 
 }

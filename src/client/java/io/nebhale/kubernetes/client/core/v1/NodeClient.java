@@ -73,11 +73,11 @@ public interface NodeClient {
     /**
      * replace the specified Node
      */
-    Mono<Node> update(String name, Node body, UpdateOptions options);
+    Mono<Node> update(Node body, UpdateOptions options);
 
     /**
      * replace status of the specified Node
      */
-    Mono<Node> updateStatus(String name, Node body, UpdateOptions options);
+    Mono<Node> updateStatus(Node body, UpdateOptions options);
 
 }

@@ -63,6 +63,6 @@ public interface MutatingWebhookConfigurationClient {
     /**
      * replace the specified MutatingWebhookConfiguration
      */
-    Mono<MutatingWebhookConfiguration> update(String name, MutatingWebhookConfiguration body, UpdateOptions options);
+    Mono<MutatingWebhookConfiguration> update(MutatingWebhookConfiguration body, UpdateOptions options);
 
 }

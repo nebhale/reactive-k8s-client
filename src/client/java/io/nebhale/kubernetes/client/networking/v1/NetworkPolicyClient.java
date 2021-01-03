@@ -63,6 +63,6 @@ public interface NetworkPolicyClient {
     /**
      * replace the specified NetworkPolicy
      */
-    Mono<NetworkPolicy> update(String name, NetworkPolicy body, UpdateOptions options);
+    Mono<NetworkPolicy> update(NetworkPolicy body, UpdateOptions options);
 
 }

@@ -63,6 +63,6 @@ public interface PodSecurityPolicyClient {
     /**
      * replace the specified PodSecurityPolicy
      */
-    Mono<PodSecurityPolicy> update(String name, PodSecurityPolicy body, UpdateOptions options);
+    Mono<PodSecurityPolicy> update(PodSecurityPolicy body, UpdateOptions options);
 
 }

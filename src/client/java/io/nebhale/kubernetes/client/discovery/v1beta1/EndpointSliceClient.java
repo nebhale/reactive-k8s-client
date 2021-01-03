@@ -63,6 +63,6 @@ public interface EndpointSliceClient {
     /**
      * replace the specified EndpointSlice
      */
-    Mono<EndpointSlice> update(String name, EndpointSlice body, UpdateOptions options);
+    Mono<EndpointSlice> update(EndpointSlice body, UpdateOptions options);
 
 }

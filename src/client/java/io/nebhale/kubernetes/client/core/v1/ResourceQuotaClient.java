@@ -73,11 +73,11 @@ public interface ResourceQuotaClient {
     /**
      * replace the specified ResourceQuota
      */
-    Mono<ResourceQuota> update(String name, ResourceQuota body, UpdateOptions options);
+    Mono<ResourceQuota> update(ResourceQuota body, UpdateOptions options);
 
     /**
      * replace status of the specified ResourceQuota
      */
-    Mono<ResourceQuota> updateStatus(String name, ResourceQuota body, UpdateOptions options);
+    Mono<ResourceQuota> updateStatus(ResourceQuota body, UpdateOptions options);
 
 }

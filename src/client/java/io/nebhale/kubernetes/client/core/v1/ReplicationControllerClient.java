@@ -73,11 +73,12 @@ public interface ReplicationControllerClient {
     /**
      * replace the specified ReplicationController
      */
-    Mono<ReplicationController> update(String name, ReplicationController body, UpdateOptions options);
+    Mono<ReplicationController> update(ReplicationController body, UpdateOptions options);
+
 
     /**
      * replace status of the specified ReplicationController
      */
-    Mono<ReplicationController> updateStatus(String name, ReplicationController body, UpdateOptions options);
+    Mono<ReplicationController> updateStatus(ReplicationController body, UpdateOptions options);
 
 }

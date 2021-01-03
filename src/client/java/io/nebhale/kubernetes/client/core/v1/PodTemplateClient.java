@@ -63,6 +63,6 @@ public interface PodTemplateClient {
     /**
      * replace the specified PodTemplate
      */
-    Mono<PodTemplate> update(String name, PodTemplate body, UpdateOptions options);
+    Mono<PodTemplate> update(PodTemplate body, UpdateOptions options);
 
 }

@@ -63,6 +63,6 @@ public interface CSINodeClient {
     /**
      * replace the specified CSINode
      */
-    Mono<CSINode> update(String name, CSINode body, UpdateOptions options);
+    Mono<CSINode> update(CSINode body, UpdateOptions options);
 
 }

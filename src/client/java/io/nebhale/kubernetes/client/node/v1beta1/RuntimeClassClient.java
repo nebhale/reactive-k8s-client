@@ -63,6 +63,6 @@ public interface RuntimeClassClient {
     /**
      * replace the specified RuntimeClass
      */
-    Mono<RuntimeClass> update(String name, RuntimeClass body, UpdateOptions options);
+    Mono<RuntimeClass> update(RuntimeClass body, UpdateOptions options);
 
 }

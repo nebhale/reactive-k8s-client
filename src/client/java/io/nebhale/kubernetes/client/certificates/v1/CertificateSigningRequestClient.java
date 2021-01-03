@@ -83,16 +83,16 @@ public interface CertificateSigningRequestClient {
     /**
      * replace the specified CertificateSigningRequest
      */
-    Mono<CertificateSigningRequest> update(String name, CertificateSigningRequest body, UpdateOptions options);
+    Mono<CertificateSigningRequest> update(CertificateSigningRequest body, UpdateOptions options);
 
     /**
      * replace approval of the specified CertificateSigningRequest
      */
-    Mono<CertificateSigningRequest> updateApproval(String name, CertificateSigningRequest body, UpdateOptions options);
+    Mono<CertificateSigningRequest> updateApproval(CertificateSigningRequest body, UpdateOptions options);
 
     /**
      * replace status of the specified CertificateSigningRequest
      */
-    Mono<CertificateSigningRequest> updateStatus(String name, CertificateSigningRequest body, UpdateOptions options);
+    Mono<CertificateSigningRequest> updateStatus(CertificateSigningRequest body, UpdateOptions options);
 
 }

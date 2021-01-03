@@ -63,6 +63,6 @@ public interface LeaseClient {
     /**
      * replace the specified Lease
      */
-    Mono<Lease> update(String name, Lease body, UpdateOptions options);
+    Mono<Lease> update(Lease body, UpdateOptions options);
 
 }

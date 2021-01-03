@@ -63,6 +63,6 @@ public interface CSIDriverClient {
     /**
      * replace the specified CSIDriver
      */
-    Mono<CSIDriver> update(String name, CSIDriver body, UpdateOptions options);
+    Mono<CSIDriver> update(CSIDriver body, UpdateOptions options);
 
 }

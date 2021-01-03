@@ -73,11 +73,11 @@ public interface PersistentVolumeClaimClient {
     /**
      * replace the specified PersistentVolumeClaim
      */
-    Mono<PersistentVolumeClaim> update(String name, PersistentVolumeClaim body, UpdateOptions options);
+    Mono<PersistentVolumeClaim> update(PersistentVolumeClaim body, UpdateOptions options);
 
     /**
      * replace status of the specified PersistentVolumeClaim
      */
-    Mono<PersistentVolumeClaim> updateStatus(String name, PersistentVolumeClaim body, UpdateOptions options);
+    Mono<PersistentVolumeClaim> updateStatus(PersistentVolumeClaim body, UpdateOptions options);
 
 }

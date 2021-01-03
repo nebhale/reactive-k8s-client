@@ -63,6 +63,6 @@ public interface RoleClient {
     /**
      * replace the specified Role
      */
-    Mono<Role> update(String name, Role body, UpdateOptions options);
+    Mono<Role> update(Role body, UpdateOptions options);
 
 }

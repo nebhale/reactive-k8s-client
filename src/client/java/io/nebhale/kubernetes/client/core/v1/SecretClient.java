@@ -63,6 +63,6 @@ public interface SecretClient {
     /**
      * replace the specified Secret
      */
-    Mono<Secret> update(String name, Secret body, UpdateOptions options);
+    Mono<Secret> update(Secret body, UpdateOptions options);
 
 }

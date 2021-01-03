@@ -63,6 +63,6 @@ public interface RoleBindingClient {
     /**
      * replace the specified RoleBinding
      */
-    Mono<RoleBinding> update(String name, RoleBinding body, UpdateOptions options);
+    Mono<RoleBinding> update(RoleBinding body, UpdateOptions options);
 
 }

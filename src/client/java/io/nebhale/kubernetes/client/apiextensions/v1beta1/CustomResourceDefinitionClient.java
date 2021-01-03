@@ -73,11 +73,11 @@ public interface CustomResourceDefinitionClient {
     /**
      * replace the specified CustomResourceDefinition
      */
-    Mono<CustomResourceDefinition> update(String name, CustomResourceDefinition body, UpdateOptions options);
+    Mono<CustomResourceDefinition> update(CustomResourceDefinition body, UpdateOptions options);
 
     /**
      * replace status of the specified CustomResourceDefinition
      */
-    Mono<CustomResourceDefinition> updateStatus(String name, CustomResourceDefinition body, UpdateOptions options);
+    Mono<CustomResourceDefinition> updateStatus(CustomResourceDefinition body, UpdateOptions options);
 
 }

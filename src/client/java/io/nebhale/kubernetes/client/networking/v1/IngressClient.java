@@ -73,11 +73,11 @@ public interface IngressClient {
     /**
      * replace the specified Ingress
      */
-    Mono<Ingress> update(String name, Ingress body, UpdateOptions options);
+    Mono<Ingress> update(Ingress body, UpdateOptions options);
 
     /**
      * replace status of the specified Ingress
      */
-    Mono<Ingress> updateStatus(String name, Ingress body, UpdateOptions options);
+    Mono<Ingress> updateStatus(Ingress body, UpdateOptions options);
 
 }

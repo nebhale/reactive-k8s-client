@@ -63,6 +63,6 @@ public interface StorageClassClient {
     /**
      * replace the specified StorageClass
      */
-    Mono<StorageClass> update(String name, StorageClass body, UpdateOptions options);
+    Mono<StorageClass> update(StorageClass body, UpdateOptions options);
 
 }

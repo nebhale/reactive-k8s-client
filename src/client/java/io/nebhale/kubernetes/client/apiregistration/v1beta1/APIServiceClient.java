@@ -73,11 +73,11 @@ public interface APIServiceClient {
     /**
      * replace the specified APIService
      */
-    Mono<APIService> update(String name, APIService body, UpdateOptions options);
+    Mono<APIService> update(APIService body, UpdateOptions options);
 
     /**
      * replace status of the specified APIService
      */
-    Mono<APIService> updateStatus(String name, APIService body, UpdateOptions options);
+    Mono<APIService> updateStatus(APIService body, UpdateOptions options);
 
 }

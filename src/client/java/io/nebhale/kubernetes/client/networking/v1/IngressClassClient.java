@@ -63,6 +63,6 @@ public interface IngressClassClient {
     /**
      * replace the specified IngressClass
      */
-    Mono<IngressClass> update(String name, IngressClass body, UpdateOptions options);
+    Mono<IngressClass> update(IngressClass body, UpdateOptions options);
 
 }

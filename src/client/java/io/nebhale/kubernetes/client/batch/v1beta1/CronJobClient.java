@@ -73,11 +73,11 @@ public interface CronJobClient {
     /**
      * replace the specified CronJob
      */
-    Mono<CronJob> update(String name, CronJob body, UpdateOptions options);
+    Mono<CronJob> update(CronJob body, UpdateOptions options);
 
     /**
      * replace status of the specified CronJob
      */
-    Mono<CronJob> updateStatus(String name, CronJob body, UpdateOptions options);
+    Mono<CronJob> updateStatus(CronJob body, UpdateOptions options);
 
 }

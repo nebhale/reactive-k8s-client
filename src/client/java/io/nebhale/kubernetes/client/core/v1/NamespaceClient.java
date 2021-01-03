@@ -78,6 +78,6 @@ public interface NamespaceClient {
     /**
      * replace status of the specified Namespace
      */
-    Mono<Namespace> update(String name, Namespace body, UpdateOptions options);
+    Mono<Namespace> update(Namespace body, UpdateOptions options);
 
 }
